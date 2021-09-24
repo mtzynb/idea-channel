@@ -1,0 +1,23 @@
+{
+    "operation_time": 1632071762196,
+    "deposit_number": "0201255801006",
+    "deposit_status": "OPEN",
+    "inauguration_date": "2014-10-17T03:19:42+0330",
+    "expire_date": "2071-03-21T14:25:06+0430",
+    "balance": 39956691379,
+    "blocked_amount": 0,
+    "currency": "IRR",
+    "personality": "ACTUAL",
+    "owner": "PERSONAL_DEPOSIT",
+    "signature": "OWNER_OF_DEPOSIT_AND_SIGNATURE",
+    "deposit_title": "0201255801006",
+    "branch_code": "0131",
+    "group": "SHORT_ACCOUNT",
+    "support_deposit_status": "UNKNOWN",
+    "withdrawal_option": "PERSONAL_WITHDRAWAL",
+    "available_balance": 39956691379,
+    "extra_available_balance": 39956691379,
+    "iban": "IR070660000000201255801006",
+    "maximum_balance": 999999999999999,
+    "minimum_balance": 0
+}

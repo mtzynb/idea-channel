@@ -1,0 +1,38 @@
+{
+    "operation_time": 1632071875253,
+    "statemens": [
+        {
+            "serial_number": "0",
+            "date": "2021-09-11T15:06:26+0430",
+            "transaction_date": 1631356586000,
+            "description": "انتقال وجه اينترنتي از سپرده 0201255801006 به سپرده 0203343021002 ",
+            "balance": 39956691379,
+            "statement_serial": 46242901,
+            "branch_code": "0131",
+            "branch_name": "سهروردی شمالی",
+            "agent_branch_code": "6666",
+            "agent_branch_name": "شعبه کارت",
+            "transfer_amount": -10000,
+            "reference_number": "62012898017",
+            "statement_id": "46242901_1631356586000_1"
+        }
+    ],
+    "statements": [
+        {
+            "serial_number": "0",
+            "date": "2021-09-11T15:06:26+0430",
+            "transaction_date": 1631356586000,
+            "description": "انتقال وجه اينترنتي از سپرده 0201255801006 به سپرده 0203343021002 ",
+            "balance": 39956691379,
+            "statement_serial": 46242901,
+            "branch_code": "0131",
+            "branch_name": "سهروردی شمالی",
+            "agent_branch_code": "6666",
+            "agent_branch_name": "شعبه کارت",
+            "transfer_amount": -10000,
+            "reference_number": "62012898017",
+            "statement_id": "46242901_1631356586000_1"
+        }
+    ],
+    "has_next_page": true
+}

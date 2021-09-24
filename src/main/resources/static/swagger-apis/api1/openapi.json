@@ -1,0 +1,222 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Idea Channel",
+    "description": "This is a channel which connects U to all the bank services :)",
+    "termsOfService": "",
+    "contact": {},
+    "license": {
+      "name": "",
+      "url": ""
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:9000",
+      "description": ""
+    }
+  ],
+  "tags": [
+    {
+      "name": "deposits",
+      "description": "everything about deposits"
+    }
+  ],
+  "paths": {
+    "/idea-channel/deposits/balance": {
+      "post": {
+        "tags": [
+          "deposits"
+        ],
+        "summary": "getDepositBalance - by deposit number in json request body",
+        "operationId": "getDepositBalanceUsingPOST",
+        "parameters": [
+          {
+            "name": "bank-id",
+            "in": "header",
+            "description": "Enter a bank-id. supported bank ids:(SAMAN, MIDDLE_EAST, TOURISM, BOOMIR)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              },
+              "example": {
+                "deposit_number": "0201255801006"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": {
+                  "operation_time": 1632508367725,
+                  "deposit_number": "0201255801006",
+                  "deposit_status": "OPEN",
+                  "balance": 39956691379,
+                  "blocked_amount": 0,
+                  "currency": "IRR",
+                  "available_balance": 39956691379,
+                  "extra_available_balance": 39956691379
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/idea-channel/deposits/info": {
+      "post": {
+        "tags": [
+          "deposits"
+        ],
+        "summary": "getDepositInfo - by deposit number in json request body",
+        "operationId": "getDepositInfoUsingPOST",
+        "parameters": [
+          {
+            "name": "bank-id",
+            "in": "header",
+            "description": "Enter a bank-id. supported bank ids:(SAMAN, MIDDLE_EAST, TOURISM, BOOMIR)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              },
+              "example": {
+                "deposit_number": "0201255801006"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": {
+                  "operation_time": 1632491602064,
+                  "deposit_number": "0201255801006",
+                  "deposit_status": "OPEN",
+                  "inauguration_date": "2014-10-17T03:19:42+0330",
+                  "expire_date": "2071-03-21T14:25:06+0430",
+                  "balance": 39956691379,
+                  "blocked_amount": 0,
+                  "currency": "IRR",
+                  "personality": "ACTUAL",
+                  "owner": "PERSONAL_DEPOSIT",
+                  "signature": "OWNER_OF_DEPOSIT_AND_SIGNATURE",
+                  "deposit_title": "0201255801006",
+                  "branch_code": "0131",
+                  "group": "SHORT_ACCOUNT",
+                  "support_deposit_status": "UNKNOWN",
+                  "withdrawal_option": "PERSONAL_WITHDRAWAL",
+                  "available_balance": 39956691379,
+                  "extra_available_balance": 39956691379,
+                  "iban": "IR070660000000201255801006",
+                  "maximum_balance": 999999999999999,
+                  "minimum_balance": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/idea-channel/deposits/statements": {
+      "post": {
+        "tags": [
+          "deposits"
+        ],
+        "summary": "getDepositStatements - by filter in json request body",
+        "operationId": "getDepositStatementsUsingPOST",
+        "parameters": [
+          {
+            "name": "bank-id",
+            "in": "header",
+            "description": "Enter a bank-id. supported bank ids:(SAMAN, MIDDLE_EAST, TOURISM, BOOMIR)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              },
+              "example": {
+                "deposit_number": "0201255801006",
+                "from_date": "2021-01-01T00:00:00",
+                "to_date": "2021-02-02T00:00:00",
+                "offset": 0,
+                "length": 120,
+                "order": "DESC",
+                "description": "",
+                "action": "DEBIT"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": {
+                  "operation_time": 1632491666469,
+                  "statements": [
+                    {
+                      "serial_number": "0",
+                      "date": "2021-02-01T19:13:18+0330",
+                      "transaction_date": 1612194198000,
+                      "description": "انتقال وجه از 5029381014694871 به 5029381014694897 ",
+                      "balance": 13846760949,
+                      "statement_serial": 46124936,
+                      "branch_code": "0131",
+                      "branch_name": "سهروردی شمالی",
+                      "agent_branch_code": "6666",
+                      "agent_branch_name": "شعبه کارت",
+                      "transfer_amount": 100,
+                      "reference_number": "99111312779047",
+                      "statement_id": "46124936_1612194198000_1"
+                    }
+                  ],
+                  "has_next_page": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}

@@ -1,0 +1,26 @@
+#http server port
+server.port: 9000
+#actuator properties
+management:
+  endpoints.web.exposure.include: '*'
+  server.port: 9005
+
+#faraboom properties
+faraboom:
+  base-url: https://api.sandbox.faraboom.co/v1/
+  username: rahandsnd
+  password: Rahandsnd@123
+  device-id: 192.168.1.1
+  token-id: p8VOFaS7w5MB62bUtDQ46uvuuwxG1csIA5AXYIgp3LsXfoR9xcc36nzVrFMeYez9nEty1RAqxuozHzAqCDBc8yKklk
+  app-key: 13774
+  app-secret: dd7yv0owJDvLS15zg7Ah8F9iRwxIbtPjDW4nW6j0xg
+  bank-name: BOOMIR
+  net-bank:
+    login-url: https://oauth.sandbox.faraboom.co
+    username: ghasabkola
+    password: 717517351
+
+#security properties
+spring.security.user:
+  name: channelusername
+  password: channelpassword

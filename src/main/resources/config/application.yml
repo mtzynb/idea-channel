@@ -1,0 +1,27 @@
+spring.main.banner-mode: off
+spring.profiles.active: test
+
+#application info
+info:
+  app:
+    name: IDEA CHANNEL APPLICATION
+    description: This is a channel that connects U to all the bank services :)
+    version: 1.0.0
+
+spring:
+  application:
+    name: idea-channel
+
+#context path of application
+server.servlet.context-path: /idea-channel
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+    include-exception: true
+
+logging:
+  config: classpath:logback/logback-spring.xml
+

@@ -1,0 +1,12 @@
+#http server port
+server.port: 8080
+
+
+# actuator properties
+management:
+  server.port: 8085
+
+#security properties
+spring.security.user:
+  name: channelusername
+  password: channelpassword

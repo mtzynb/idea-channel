@@ -1,0 +1,10 @@
+{
+    "deposit_number": "0201255801006",
+    "from_date": "2021-01-01T00:00:00",
+    "to_date": "2021-02-02T00:00:00",
+    "offset": 0,
+    "length": 120,
+    "order": "DESC",
+    "description": "",
+    "action": "DEBIT"
+}
